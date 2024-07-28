@@ -32,9 +32,9 @@ void main() {
   test(
     'Counter 값 최소값 감소 테스트',
         () {
-      final counter = Counter(value: 1000);
-      counter.increment();
-      expect(counter.value, 1000);
+      final counter = Counter(value: 0);
+      counter.decrement();
+      expect(counter.value, 0);
     },
   );
 }
